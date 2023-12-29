@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Review Page{% endblock %}
+
+{% block body %}
+    <section class="reviews-section">
+        <h2>Reviews</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Name</th>
+                    <th>Rating</th>
+                    <th>Comment Heading</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for review in reviews %}
+                    <tr>
+                        <td>{{ review['Product'] }}</td>
+                        <td>{{ review['Name'] }}</td>
+                        <td>{{ review['Rating'] }}</td>
+                        <td>{{ review['CommentHead'] }}</td>
+                        <td>{{ review['Comment'] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+{% endblock %}
