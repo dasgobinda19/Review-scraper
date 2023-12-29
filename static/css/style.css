@@ -65,6 +65,43 @@ table tr:nth-child(2n+1) {
     background-color: #edf7f8;
 }
 
+.search-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.search-section h2 {
+    color: #327a81;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full-width-search {
+    width: 100%;
+}
+
+.search-box {
+    padding: 15px;
+    width: 70%;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.search-button {
+    background-color: #327a81;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
 @media screen and (max-width: 700px) {
     table,
     tr,
@@ -117,56 +154,4 @@ table tr:nth-child(2n+1) {
     .table-users {
         max-width: 100%;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Additional CSS for Search Box and Button in index.html */
-
-.search-section {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.search-section h2 {
-    color: #327a81;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.search-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.full-width-search {
-    width: 100%;
-}
-
-.search-box {
-    padding: 15px;
-    width: 70%;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.search-button {
-    background-color: #327a81;
-    color: white;
-    padding: 20px;
-    cursor: pointer;
-    border: none;
-    font-size: 16px;
 }
